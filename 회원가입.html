@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>코인법률방/회원가입</title>
+    <style type="text/css">
+      #css_fixed { position : absolute; top:20px; left:20px; }
+      #pp { position : absolute; top:115px; left:20px;}
+      #signup_button { position : fixed; top:380px; left:25px;}
+      #reset { position : absolute; top:380px; left:100px;}
+    </style>
+  </head>
+  <body id="signup">
+    <a href="file:///C:/Users/Administrator/Desktop/과제/HTML/캡스톤/홈페이지.html">
+      <img src="피카츄로고.png" width="230" height="85" id="css_fixed"></a><br/>
+      <fieldset id=pp>
+        <legend>회원가입</legend>
+        <span>사용자 아이디</span>
+        <input id="username" type="text"/>
+        <input id="check" type="button" value="중복확인"><br/>
+        <span>비밀번호</span> <input id="pass1" type="password"><br/>
+        <span>비밀번호 확인</span> <input id="pass2" type="password"><br/>
+        <span>이름</span> <input type="text"><br/>
+        <span>전화번호</span> <input type="tel"/><br/>
+        <span>이메일</span> <input type="email"><br/>
+        <span>생일</span> <input type="date"/><br/>
+        <span>연령대</span>
+        <select>
+          <option>10대 이하</option>
+          <option>20대</option>
+          <option>30대</option>
+          <option>40대</option>
+          <option>50대</option>
+          <option>60대</option>
+          <option>60대 이상</option>
+        </select><br/>
+        <span>이용분야</span>
+        <input type = "radio" name="s_type" value="user" id="user">
+        <label for="women">사용자</label>
+        <input type = "radio" name="s_type" value="law" id="law">
+        <label for="women">법률지식인</label>
+      </fieldset>
+      <input id="signup_button" type="submit" value="회원가입">
+      <input id="reset" type="button" value="취소">
+  </body>
+</html>

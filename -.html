@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+   <title>채팅방</title>
+   <link rel="stylesheet" type="text/css" href="css/maincss.css">
+</head>
+
+<body>
+  <a href="file:///C:/Users/Administrator/Desktop/과제/HTML/캡스톤/홈페이지.html">
+    <img src="피카츄로고.png" width="230" height="85" id="css_fixed"></a><br/>
+    <form id="form" action="action.jsp"><hr>
+
+        <body id="body">
+        <p id="buttons">
+        <a href="file:///C:/Users/Administrator/Desktop/과제/HTML/캡스톤/로그인.html">
+        <input type="button" value="로그인" >
+        </a>
+
+        <a href="file:///C:/Users/Administrator/Desktop/과제/HTML/캡스톤/회원가입.html">
+        <input type="button" value="회원가입">
+        </a>
+
+        <a href="file:///C:/Users/Administrator/Desktop/과제/HTML/캡스톤/문의.html">
+        <input type="button" value="고객센터">
+        </a>
+
+        <input type="text" placeholder="검색어 입력">
+        <button>검색</button>
+        </p>
+
+<form method="post" action="" id=>
+<h2>채팅방</h2>
+<textarea id="text1" rows="40" cols="110" cols="32"></textarea><br>
+<div onkeydown="if(event.keyCode == 13) window.event.returnValue = false;" onkeyup="if(event.keyCode == 13)textprint()" >
+<input type="String" id="textzone" size="128" value="사용자 : ">&nbsp;
+<input type="button" value="입력" id="input" onclick="textprint()"><br/><br/>
+
+
+
+<script type="text/javascript">
+   function textprint(){
+
+   var temp = document.getElementById("textzone");
+    var savetext = document.getElementById("text1");
+
+   savetext.value = savetext.value + temp.value + "\n";
+
+   temp.value = "사용자 : ";
+
+    }
+</script>
+</div>
+</form>
+</body>
+<hr>
+   <footer>
+      <p>COPYRIGHT(C) 코인법률방(Coin law room) All Rights Reserved
+
+      <img src="카카오톡.png" width="50" height="50" onclick="alert('(SNS 문의) e카카오톡 아이디 : lhj7681')"</a>
+      <a href="http://facebook.com" target="_blank"><img src="페이스북.png" width="50" height="50" ></a>
+      <a href="http://twitter.com" target="_blank"><img src="트위터.png" width="50" height="50"></a>
+      <a href="http://instagram.com" target="_blank"><img src="인스타그램.png" width="50" height="50"></a>
+      <img src="라인.png" width="50" height="50" onclick="alert('(SNS 문의) 라인 아이디 : 없음')"></a>
+      <img src="SNS.png" width="50" height="50"></p>
+
+   </footer>
+</html>
